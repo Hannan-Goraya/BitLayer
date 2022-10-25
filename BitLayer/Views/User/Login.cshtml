@@ -1,0 +1,24 @@
+﻿@model BitLayer.Models.UserLogindto
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<form method="post">
+
+
+<div class="form-group">
+    <label asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" type="email" />
+    <label id="Email-error" class="error" for="Email" style="display:none"></label>
+</div>
+
+<div class="form-group">
+    <label asp-for="Password"></label>
+    <input asp-for="Password" class="form-control" type="password" />
+    <label id="Password-error" class="error" for="Password" style="display:none"></label>
+</div>
+    <button type="submit" class="btn-primary">Register</button>
+
+</form>
